@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JH MANUTENÇÕES | HOME</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css">
+</head>
+<body>
+	<!-- Section Header -->
+	<section class="w-full px-3 antialiased bg-indigo-600 lg:px-6">
+		<div class="mx-auto max-w-7xl">
+			<!-- <span class="text-white text-xs p-0 mr-0">A solução do problema é a nossa garantia. Sem reparo, sem cobrança</span> -->
+			<nav class="flex items-center w-full h-24 select-none" x-data="{ showMenu: false }">
+				<div class="relative flex flex-wrap items-center justify-between w-full h-24 mx-auto font-medium ms:justify">
+					<a href="index.html" class="w-1/4 py-4 pl-6 pr-4 md:pl-4 md:py-0">
+						<span class="text-white p-0 text-5xl font-black leading-none select-none tracking-tight">JH<span class="text-base text-white p-0 m-0">Manutenções</span></span>						
+					</a>
+					<div class="fixed top-0 left-0 z-40 items-center hidden w-full p-3 text-xl bg-gray-900 bg-opacity-50 md:text-sm lg:text-base md:w-3/4 md:bg-transparent md:p-0 md:relative md:flex" :class="{ 'flex': showMenu, 'hidden': !showMenu }">
+						<div class="flex-col w-full h-auto h-full overflow-hidden bg-white rounded-lg select-none md:bg-transparent md:rounded-none md:relative md:flex md:flex-row md:overflow-auto">
+							<div class="flex flex-col items-center justify-center w-full h-full mt-12 text-center text-indigo-700 md:text-indigo-200 md:w-2/3 md:mt-0 md:flex-row md:items-center">
+							
+								<a href="#_" class="inline-block px-2 py-2 mx-2 font-medium text-left text-indigo-700 md:text-white ms:px-0 lg:mx-3 md:text-center uppercase">
+									nossos serviços
+								</a>
+								<a href="#" class="inline-block px-0 px-4 py-2 mx-2 font-medium text-left uppercase md:px-0 hover:text-indigo-800 md:hover:text-white lg:mx-3 md:text-center">
+									nossa garantia
+								</a>
+								<a href="#" class="inline-block px-0 px-4 py-2 mx-2 font-medium text-left uppercase md:px-0 hover:text-indigo-800 md:hover:text-white lg:mx-3 md:text-center">
+									quem somos
+								</a>
+								<a href="#" class="inline-block px-0 px-4 py-2 mx-2 font-medium text-left uppercase md:px-0 hover:text-indigo-800 md:hover:text-white lg:mx-3 md:text-center">
+									contato
+								</a>
+							</div>
+							<div class="flex dlex-col items-center judtify-end w-full pt-4 md:w-1/3 md:flex-row md:py-0">
+								<a href="#_" class="inline-flex items-center justify-center px-4 py-2 mr-1 text-base font-medium leading-6 text-indigo-600 whitespace-no-wrap transition duration-150 ease-in-out bg-white border border-transparent rounded-full hover:bg-white focus:outline-none focus:border-indigo-700 focus:shadow-outline-indigo active:bg-indigo-700">
+									Fazer Orçamento
+								</a>
+							</div>
+						</div>
+					</div>
+					<div @click="showMenu = !showMenu" class="absolute right-0 z-50 flex flex-col items-end w-10 h-10 p-2 mr-4 rounded-full cursor-pointer md:hidden hover:bg-gray-900 hover:bg-opacity-10" :class="{ 'text-gray-400': showMenu, 'text-gray-100': !showMenu }">
+						<svg class="w-6 h-6" x-show="!showMenu" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" stroke="currentColor" x-cloak="">
+							<path d="M4 6h16M4 12h16M4 18h16"></path>
+						</svg>
+						<svg class="w-6 h-6" x-show="showMenu" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" x-cloak="">
+							<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+						</svg>
+					</div>
+				</div>
+			</nav>
+			<div class="container py-32 mx-auto text-center sm:px-4">
+				<h1 class="text-4xl font-extrabold leading-10 tracking-tight text-white sm:text-5xl sm:leading-none md:text-6xl xl:text-7xl">
+					<span class="block">Site em Construção</span> 
+					<span></span>
+				</h1>
+			</div>
+		</div>
+	</section>
+	<!-- endSection Header -->
+	<!-- AlpineJS Library -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.8.0/alpine.js"></script>
+</body>
+</html>
